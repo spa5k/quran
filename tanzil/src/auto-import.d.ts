@@ -20,7 +20,7 @@ declare global {
   const CommandSeparator: typeof import('./components/Command/Command')['CommandSeparator']
   const CommandShortcut: typeof import('./components/Command/Command')['CommandShortcut']
   const ConvertSurah: typeof import('./features/surah/utils/helper')['ConvertSurah']
-  const DailyAyat: typeof import('./features/salah/components/DailyAyat')['DailyAyat']
+  const DailyAyat: typeof import('./features/salah/components/DailyAyat')['default']
   const Dialog: typeof import('./components/Dialog/Dialog')['Dialog']
   const DialogContent: typeof import('./components/Dialog/Dialog')['DialogContent']
   const DialogDescription: typeof import('./components/Dialog/Dialog')['DialogDescription']
