@@ -1,5 +1,4 @@
 /* eslint-disable no-mixed-spaces-and-tabs */
-import DailyDisplay from '@/components/Layout/DailyDisplay.js';
 
 export const HomePage = () => {
   return (
