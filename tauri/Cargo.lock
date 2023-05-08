@@ -1375,29 +1375,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "tauri"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "dotenvy",
- "islam",
- "rspc",
- "serde",
- "serde_json",
- "specta",
- "sqlx",
- "tauri",
- "tauri-build",
- "time",
- "tokio",
- "tracing",
- "tracing-appender",
- "tracing-bunyan-formatter",
- "tracing-log",
- "tracing-subscriber",
-]
-
-[[package]]
 name = "islam"
 version = "1.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2515,7 +2492,7 @@ dependencies = [
  "serde",
  "serde_json",
  "specta",
- "tauri",
+ "tauri 1.2.4",
  "thiserror",
  "tokio",
 ]
@@ -3229,6 +3206,29 @@ name = "target-lexicon"
 version = "0.12.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "fd1ba337640d60c3e96bc6f0638a939b9c9a7f2c316a1598c279828b3d1dc8c5"
+
+[[package]]
+name = "tauri"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "dotenvy",
+ "islam",
+ "rspc",
+ "serde",
+ "serde_json",
+ "specta",
+ "sqlx",
+ "tauri 1.2.4",
+ "tauri-build",
+ "time",
+ "tokio",
+ "tracing",
+ "tracing-appender",
+ "tracing-bunyan-formatter",
+ "tracing-log",
+ "tracing-subscriber",
+]
 
 [[package]]
 name = "tauri"
