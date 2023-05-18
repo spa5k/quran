@@ -18,10 +18,16 @@ export default function DailyAyat() {
       setTranslation(translationData.data.text);
     };
     fetchRandomAyah();
+    const intervalId = setInterval(fetchRandomAyah, 24 * 60 * 60 * 1000);
+
+    return () => {
+      clearInterval(intervalId);
+    };
+    
   }, []);
 
   return (
-    <div style={{textAlign: "center", border: "0px solid", borderRadius: '10px', background: '#e3bf6b', backgroundClip: 'padding-box', width: '230px', height: '220px', margin: '0 auto', marginTop: "20px", color: "black"}}>
+    <div style={{textAlign: "center", border: "0px solid", borderRadius: '10px', background: '#dedede', backgroundClip: 'padding-box', width: '250px', height: '210px', margin: '0 auto', marginTop: "20px", color: "black"}}>
       <p><strong>Daily Ayah</strong></p>
       <p>{ayah}</p>
       <p style={{ fontSize: '10px' }}><br></br>{translation}</p>
