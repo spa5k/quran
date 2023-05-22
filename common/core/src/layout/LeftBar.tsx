@@ -16,21 +16,21 @@ const mainRoutes = [
 		selected: false,
 		id: 1,
 		to: '/',
-		icon: <Icon icon='material-symbols:home-rounded' className='mr-4 h-6 w-6' style={{ minWidth: '1.5rem' }} />,
+		icon: <Icon icon='ic:twotone-mosque' className='mr-4 h-6 w-6' style={{ minWidth: '1.5rem' }} />,
 	},
 	{
 		title: 'Quran',
 		selected: false,
 		id: 2,
 		to: '/surah',
-		icon: <Icon icon='fa6-solid:book-quran' className='mr-4 h-6 w-6' style={{ minWidth: '1.5rem' }} />,
+		icon: <Icon icon='arcticons:al-quran-indonesia' className='mr-4 h-6 w-6' style={{ minWidth: '1.5rem' }} />,
 	},
 	{
 		title: 'Hadith',
 		selected: true,
 		id: 3,
 		to: '/hadith',
-		icon: <Icon icon='zondicons:location' className='mr-4 h-6 w-6' style={{ minWidth: '1.5rem' }} />,
+		icon: <Icon icon='la:quran' className='mr-4 h-6 w-6' style={{ minWidth: '1.5rem' }} />,
 	},
 	{
 		title: 'Salah',
@@ -39,7 +39,7 @@ const mainRoutes = [
 		to: '/salah',
 		icon: (
 			<Icon
-				icon='ic:baseline-access-time-filled'
+				icon='fa-solid:pray'
 				className='mr-4 h-6 w-6'
 				style={{ minWidth: '1.5rem' }}
 			/>
@@ -50,7 +50,7 @@ const mainRoutes = [
 		selected: true,
 		id: 5,
 		to: '/tracker',
-		icon: <Icon icon='ic:round-check-circle' className='mr-4 h-6 w-6' style={{ minWidth: '1.5rem' }} />,
+		icon: <Icon icon='fluent-mdl2:trackers-mirrored' className='mr-4 h-6 w-6' style={{ minWidth: '1.5rem' }} />,
 	},
 ];
 
@@ -71,9 +71,9 @@ export const LeftBar = ({ hideText, handler }: { hideText: boolean; handler: Ref
 		const panel = handler.current;
 		if (panel) {
 			const size = panel?.getSize();
-			if (size > 5) {
+			if (size > 3.57) {
 				setLocalSize(size);
-				panel?.resize(5);
+				panel?.resize(3.57);
 			} else {
 				panel?.resize(Number(localSize));
 			}
@@ -81,7 +81,7 @@ export const LeftBar = ({ hideText, handler }: { hideText: boolean; handler: Ref
 	};
 
 	return (
-		<div className='mx-1 min-h-screen basis-1/4 bg-white py-2 text-black'>
+		<div className='mx-1 min-h-screen basis-1/4 bg-white py-2 text-black' style={{backgroundColor: "#0f172a"}}>                                           
 			<div className='flex w-full items-end justify-end '>
 				<TooltipProvider>
 					<Tooltip>
@@ -90,8 +90,8 @@ export const LeftBar = ({ hideText, handler }: { hideText: boolean; handler: Ref
 							className='h-8 w-8'
 						>
 							{(leftSidebarState || !showText)
-								? <Icon icon='ic:round-keyboard-arrow-right' className={ToggleClassName} />
-								: <Icon icon='ic:round-keyboard-arrow-right' className={ToggleClassName} />}
+								? <Icon icon='majesticons:menu' className={ToggleClassName} />
+								: <Icon icon='majesticons:menu' className={ToggleClassName} />}
 						</TooltipTrigger>
 						<TooltipContent>
 							Collapse
@@ -100,10 +100,10 @@ export const LeftBar = ({ hideText, handler }: { hideText: boolean; handler: Ref
 				</TooltipProvider>
 			</div>
 
-			<div className='flex h-full flex-col items-start overflow-hidden rounded px-2 '>
+			<div className='flex h-full flex-col items-start overflow-hidden rounded px-2 ' style={{backgroundColor: "#0f172a"}}>
 				<Link className='mt-3 flex w-full items-center pl-3' href='/'>
-					<Icon icon='line-md:moon-filled-loop' className='h-8 w-8 fill-current' style={{ minWidth: '2rem' }} />
-					{showText && <span className='ml-4 truncate text-2xl font-bold'>Quran</span>}
+					<Icon icon='line-md:moon-filled-loop' className='h-8 w-8 fill-current' style={{ minWidth: '2rem', color: 'white' }} />
+					{showText && <span className='ml-4 truncate text-2xl font-bold' style={{color: 'white'}}>Salam Web</span>}
 				</Link>
 				<div className='my-2 w-full py-2'>
 					<div className='mt-3 flex w-full flex-col items-center transition-shadow duration-500'>

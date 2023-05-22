@@ -31,7 +31,7 @@ export default function DailyAyat() {
   }, []);
 
   return (
-    <div style={{textAlign: "center", border: "1px solid lightgray", borderRadius: '10px', background: 'white', backgroundClip: 'padding-box', width: '250px', height: '210px', margin: '0 auto', marginTop: "20px", color: "#000a59", boxShadow: "15px 15px"}}>
+    <div style={{textAlign: "center", borderRadius: '20px', background: 'white', backgroundClip: 'padding-box', width: '250px', height: '210px', margin: '0 auto', marginTop: "20px", boxShadow: "0px 2px 6px 4px rgba(128, 128, 128, 0.2)"}}>
       <p><strong>Daily Ayah</strong></p>
       <p>{ayah}</p>
       <p style={{ fontSize: '10px' }}><br></br>{translation}</p>

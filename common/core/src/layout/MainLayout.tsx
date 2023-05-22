@@ -20,7 +20,7 @@ export const MainLayout = ({ children }: { children: React.ReactNode; }) => {
 				<header>
 				</header>
 
-				<main className='min-h-screen transition-all duration-150'>
+				<main className='min-h-screen transition-all duration-150' style={{backgroundColor: '#0f172a'}}>
 					<PanelGroup autoSaveId='homepage' direction='horizontal'>
 						<Panel
 							defaultSize={10}
