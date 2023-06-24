@@ -81,7 +81,7 @@ export const LeftBar = ({ hideText, handler }: { hideText: boolean; handler: Ref
 	};
 
 	return (
-		<div className='mx-1 min-h-screen basis-1/4 bg-white py-2 text-black' style={{backgroundColor: "#0f172a"}}>                                           
+		<div className='mx-1 min-h-screen basis-1/4 bg-white py-2 text-black'>                                           
 			<div className='flex w-full items-end justify-end '>
 				<TooltipProvider>
 					<Tooltip>
@@ -100,10 +100,10 @@ export const LeftBar = ({ hideText, handler }: { hideText: boolean; handler: Ref
 				</TooltipProvider>
 			</div>
 
-			<div className='flex h-full flex-col items-start overflow-hidden rounded px-2 ' style={{backgroundColor: "#0f172a"}}>
+			<div className='flex h-full flex-col items-start overflow-hidden rounded px-2'>
 				<Link className='mt-3 flex w-full items-center pl-3' href='/'>
-					<Icon icon='line-md:moon-filled-loop' className='h-8 w-8 fill-current' style={{ minWidth: '2rem', color: 'white' }} />
-					{showText && <span className='ml-4 truncate text-2xl font-bold' style={{color: 'white'}}>Salam Web</span>}
+					<Icon icon='line-md:moon-filled-loop' className='h-8 w-8 fill-current' style={{ minWidth: '2rem', color: "#0f172a" }} />
+					{showText && <span className='ml-4 truncate text-2xl font-bold' style={{color: "#0f172a"}}>Salam Web</span>}
 				</Link>
 				<div className='my-2 w-full py-2'>
 					<div className='mt-3 flex w-full flex-col items-center transition-shadow duration-500'>

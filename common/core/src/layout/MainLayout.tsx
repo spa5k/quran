@@ -1,8 +1,8 @@
 import { useRef, useState } from 'react';
 import { ErrorBoundary } from 'react-error-boundary';
 import { ImperativePanelHandle, Panel, PanelGroup } from 'react-resizable-panels';
-import { ErrorFallback, Navbar, ResizeHandle } from '../components';
 import { LeftBar } from '.';
+import { ErrorFallback, Navbar, ResizeHandle } from '../components';
 import RightBar from './RightBar';
 
 const logError = (error: Error, info: { componentStack: string; }) => {
@@ -20,7 +20,7 @@ export const MainLayout = ({ children }: { children: React.ReactNode; }) => {
 				<header>
 				</header>
 
-				<main className='min-h-screen transition-all duration-150' style={{backgroundColor: '#0f172a'}}>
+				<main className='min-h-screen transition-all duration-150'>
 					<PanelGroup autoSaveId='homepage' direction='horizontal'>
 						<Panel
 							defaultSize={10}

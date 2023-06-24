@@ -21,6 +21,8 @@ export function SidebarLink(
 					'hover: flex w-full justify-start py-1',
 					props.isActive && 'bg-secondary text-primary',
 				)}
+
+				style={{backgroundColor: "white", color: "#0f172a"}}
 			>
 				{props.path.icon}
 				{props.showText && (
